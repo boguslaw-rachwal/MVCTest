@@ -22,6 +22,8 @@ namespace MVCTest.Controllers
 
         public ActionResult Index(int? pageNumber, _PagingPartialView.ClickedLinkType? clickedLinkType, int? activeLinkNumber)
         {
+            // test
+
             const int pageSize = 2;
 
             var data = db.CategorySet;
