@@ -33,8 +33,6 @@ namespace MVCTest.Controllers
             var pagedData = data.OrderBy(p => p.Id).Skip((pageNumber.Value - 1) * pageSize).Take(pageSize);
 
             return View(pagedData.ToList());
-
-            // Test 3
         }
 
         // GET: Categories/Details/5
